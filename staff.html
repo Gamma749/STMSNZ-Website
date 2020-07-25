@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>STMSNZ - Staff</title>
+        <link rel="stylesheet" href="style.css">     
+        <link rel="stylesheet" href="skeleton.css">
+        <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="STMSNZ, STMS NZ, STMS, Traffic Managment">
+        <meta name="author" content="Hayden McAlister">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            var largeWindow = true;
+            window.addEventListener("resize", exchangeColumns);
+            
+            function exchangeColumns(){
+                var parent = document.getElementById("staffSection");
+                var columns = parent.getElementsByClassName("columns");
+                if(window.innerWidth<=1024 && largeWindow==true){
+                    largeWindow = false;
+                    //Column order is currently 0,1,2
+                    parent.insertBefore(columns[1], columns[0]); //order 1,0,2
+                } else if(window.innerWidth>1024 && largeWindow==false){
+                    largeWindow=true;
+                    //current order is 1,0,2
+                    parent.insertBefore(columns[1], columns[0]); //order 0,1,2
+                }
+            };
+        </script>
+    </head>
+
+    <body onload="exchangeColumns()">
+        <header>
+            <figure>
+                <img src="images/logo_large.png">
+            </figure>
+            <nav>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a><li class="currentNavItem">Staff</li></a>
+                    <a href="services.html"><li>Services</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </nav>
+            <div style="clear: both"></div>
+        </header>
+
+        <main>
+            <div class="fullWidthContainer" id="staffSection">
+                <div class="four columns">
+                    <div class="staffImgCaption">
+                        <figure>
+                            <img src="images/square-images/Aaron.jpg">
+                        </figure>
+                        <h4>Aaron</h4>
+                    </div>
+
+                    <div class="staffImgCaption">
+                        <h4>Chris</h4>
+                        <figure>
+                            <img src="images/square-images/Chris.jpg">
+                        </figure>
+                    </div>
+
+                    <div class="staffImgCaption">
+                        <figure>
+                            <img src="images/square-images/Hone.jpg">
+                        </figure>
+                        <h4>Hone</h4>
+                    </div>
+
+                    <div class="staffImgCaption">
+                        <h4>Jack</h4>
+                        <figure>
+                            <img src="images/square-images/Jack.jpg">
+                        </figure>
+                    </div>
+                </div>
+
+                <div id="rogerRoadcone" class="four columns">
+                    <h2>Meet my Workmates!</h2>
+                    <figure>
+                        <img src="images/rogerRoadcone.png">
+                    </figure>
+                </div>
+
+                <div class="four columns">
+                    <div class="staffImgCaption">
+                        <figure>
+                            <img src="images/square-images/barbaraHazel.jpg">
+                        </figure>
+                        <h4>Barbara & Hazel</h4>
+                    </div>
+
+                    <div class="staffImgCaption">
+                        <h4>Bill</h4>
+                        <figure>
+                            <img src="images/square-images/bill.jpg">
+                        </figure>
+                    </div>
+                    
+                    <div class="staffImgCaption">
+                        <figure>
+                            <img src="images/square-images/Dave%20Website.jpg">
+                        </figure>
+                        <h4>Dave</h4>
+                    </div>
+                    
+                    <div class="staffImgCaption">
+                        <h4>Jordi</h4>
+                        <figure>
+                            <img src="images/square-images/Jordi%20Website%20.png">
+                        </figure>
+                    </div>
+                    
+                    <div class="staffImgCaption">
+                        <figure>
+                            <img src="images/square-images/Jack%202%20Website.png">
+                        </figure>
+                        <h4>Jack</h4>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a><li class="currentNavItem">Staff</li></a>
+                    <a href="services.html"><li>Services</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <li id="topButton" onclick="document.body.scrollTop = 0; document.documentElement.scrollTop = 0;">Top</li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

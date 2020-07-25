@@ -1,0 +1,395 @@
+/*
+White: #DFDFDF
+Blue: #007CBC
+*/
+* {box-sizing:border-box}
+
+
+/*Overarching tag rules*/
+html{
+    color:#000000;
+    background-color:#DFDFDF;
+    width:100%;
+}
+
+body{
+    margin:0 auto 5% auto;
+    color:#000000;
+}
+
+/*Header CSS*/
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    color: #000000;
+    background-color:#DFDFDF;
+    border:1px solid #007CBC;
+    border-width: 0 0 1px 0;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 0 0 0 2%;
+    margin: 0;
+}
+
+header figure{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 1% 0 0 0;
+    padding: 0;
+    width: 20%;
+}
+
+header img{
+    width: 100%;
+}
+
+nav ul{
+    margin: 0 auto;
+    padding: 0 auto;
+    padding-inline-start:0;
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav{
+    float:right;
+    padding-inline-start:20px;
+    margin:0 0 0 auto;
+    width:75%;
+}
+
+header nav li{
+    width: 19%;
+    float:left;
+    display:inline-block;
+    font-weight: 800;
+    font-size: 1.5vw;
+    padding: 8% 2%;
+    margin: 0px;
+}
+
+.currentNavItem{
+    margin: 0;
+    background-color: #007CBC;
+    color:inherit;
+}
+
+nav li:hover{
+    background-color: #0040A0;
+    color:#DFDFDF;
+}
+
+nav a{
+    text-decoration: none;
+    color:inherit;
+    background-color: inherit
+
+}
+
+/*Footer CSS*/
+footer{
+    position: static;
+    color: #000000;
+    background-color:#DFDFDF;
+    border:1px solid #007CBC;
+    border-width: 1px 0 0 0;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 0 2%;
+    width: 100%;
+}
+
+footer nav{
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer nav ul li{
+    float:left;
+    display: block;
+    font-weight: 800;
+    font-size: 1.5vw;
+    width: 16%;
+    padding: 2% 0;
+}
+
+#topButton{
+    cursor: pointer;
+}
+
+/*Main CSS*/
+main{
+    color: inherit;
+    background-color:#DFDFDF;
+    text-align: justify;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+section{
+    margin: 20px auto 0 auto;
+    padding:20px;
+}
+
+section a,
+section a:visited{
+    color: #000000;
+    background-color: inherit;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+h2{
+    font-size: 22px;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;  
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;  
+    margin: 0;
+    padding: 0;
+}
+
+main ul{
+    padding: 0 0 0 10%;
+}
+
+main figure{
+    display: inline-block;
+    vertical-align: center;
+    margin:0 2%;
+    width:15%;
+}
+
+img{
+    width: 100%;
+}
+
+
+/*index styles*/
+.imgNav img{
+    cursor: pointer;
+    border-radius: 100%;
+    width: 100%;
+    height: auto;
+    transition: 0.6s ease;
+}
+
+.imgNav img:hover{
+    border-radius: 10%;
+
+}
+
+#indexNav{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+}
+
+#indexNav columns{
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+}
+
+#indexNav #rogerRoadcone figure{
+    width: 100%;
+}
+
+#indexNav figure{
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+    height: auto;
+}
+
+/*Staff page styles*/
+.staffImgCaption{
+    display: flex;
+    align-items: center;
+}
+
+#staffSection{
+    margin: 2% auto;
+}
+
+#staffSection>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#staffSection figure{
+    width:45%;
+    margin: 5% auto;
+}
+
+#staffSection img{
+    border-radius: 100%;
+    width: 100%;
+    height: auto;
+    transition: 0.6s ease;
+}
+
+#staffSection img:hover{
+    border-radius: 10%;
+}
+
+#staffSection h4{
+    width:45%;
+}
+
+/*Services styles*/
+.imgGallery{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+}
+
+.tall{
+    flex-direction: column;
+}
+
+
+.imgGallery figure{
+    margin: auto 2%;
+    width:50%;
+}
+
+.tall figure{
+    margin: 0 auto;
+}
+
+.imgGallery img{
+/*    width: 70%;*/
+    height: 50%;
+    border-radius: 10%;
+}
+
+/*Contact page style*/
+
+.contactSection h2,
+.contactSection h4{
+    text-align: left;
+}
+
+.contactSection ul{
+    text-align: left;
+    list-style: none;
+}
+
+/*Roger styles*/
+#rogerRoadcone{
+    text-align: center;
+    margin: 2% auto;
+}
+
+#rogerRoadcone figure{
+    width: 60%;
+    margin: 2% auto auto auto;
+}
+
+#rogerRoadcone img{
+    cursor: auto;
+    border-radius: 0;
+}
+
+#rogerText{
+    margin: 2% auto 0 auto;
+    text-align: center;
+    width:100%;
+    min-height: 75px;
+}
+
+@media only screen and (max-width: 1024px){    
+    header figure{
+        box-sizing: border-box;
+        margin: 1% 0 0 0;
+        padding: 0;
+        width: 40%;
+    }
+
+    header nav{
+        margin: 0;
+        width:60%;
+    }
+
+    /*SAFARI ONLY*/
+
+    ::i-block-chrome, header nav {
+        width: 100%;
+        margin: 2% 0 0 0;
+    }
+
+    footer nav{
+        width: 100%;
+    }
+
+    footer nav ul li{
+        width: 33.333%;
+        font-size:150%;
+        font-weight: normal;
+    }
+
+    .tall{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    header nav li{
+        font-size: 2.5vw;
+        font-weight: 800;
+        width: 50%;
+    }
+
+    #introSection h2{
+        font-size: 8vw;
+    }
+
+    #introSection h4,
+    #introSection p{
+        font-size: 4vw;
+    }
+
+    footer nav ul li{
+        width: 50%;
+        font-size:100%;
+    }
+
+    .imgGallery img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    header nav li{
+        font-size: 2.5vw;
+        width: 50%;
+    }
+}
