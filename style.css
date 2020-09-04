@@ -222,6 +222,19 @@ img{
     height: auto;
 }
 
+#sitewiseGreen{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+#sitewiseGreen img{
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 /*Staff page styles*/
 .staffImgCaption{
     display: flex;
